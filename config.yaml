@@ -1,0 +1,29 @@
+training:
+  logging_dir: 'logs/'
+  log_interval: 100
+  epochs: 150
+  batch_size: 100
+  no_cuda: False
+  multigpu: False
+  seed: 42
+  resume_name: False
+comet:
+  api_key: '6oPfzhw55BucwZ4m8rV62ppyw'
+  previous_experiment: False
+dataset:
+  train_data_path: 'data/training_all.pkl'
+  test_data_path: 'data/testing_all.pkl'
+  item_path: 'data/item_ids.csv'
+  champ_path: 'data/hero_names.csv'
+  max_seq_length: 60
+model:  
+  layers1: 1
+  layers2: 1
+  emb_dim: 512
+  n_heads: 4
+  emb_fusion: 'concat'
+  model_type: 'HTransformer'
+  loss_fn: 'CrossEntropy'
+  ue: True
+  pe: True
+  te: True
