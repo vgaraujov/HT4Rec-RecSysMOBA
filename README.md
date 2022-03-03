@@ -3,7 +3,7 @@
 This repository contains the implementation of HT4Rec. 
 
 <p align="center"> 
-    <img src="model.png" width="500">
+    <img src="model.png" width="400">
 </p>
 
 ## Requirements
